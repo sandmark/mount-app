@@ -8,7 +8,6 @@
   "Generates mount based REPL driven template"
   [name]
   (let [data {:name      name
-              :namespace (tmpl/multi-segment (tmpl/sanitize-ns name))
               :sanitized (tmpl/name-to-path name)}]
     (main/info (str "Creating new reloadable project using mount called \"" name "\" ..."))
     (tmpl/->files data

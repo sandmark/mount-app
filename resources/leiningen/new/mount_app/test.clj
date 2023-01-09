@@ -1,6 +1,6 @@
-(ns {{namespace}}.core-test
+(ns {{name}}.core-test
     (:require [clojure.test :as t]
-              [{{namespace}}.core :as sut]))
+              [{{name}}.core :as sut]))
 
 (t/deftest a-test
   (t/testing "FIXME, I fail."

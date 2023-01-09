@@ -1,4 +1,4 @@
-(ns {{namespace}}.core
+(ns {{name}}.core
     (:require [mount.core :as m])
     (:gen-class))
 
