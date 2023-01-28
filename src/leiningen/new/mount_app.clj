@@ -14,6 +14,8 @@
                   "resources"
                   ["spec/{{sanitized}}/core_spec.clj" (render "core_spec.clj" data)]
                   [".dir-locals.el" (render "dir-locals.el" data)]
+                  [".joker" (render "joker" data)]
+                  ["dev/src/.joker" (render "joker-dev" data)]
                   ["dev/src/user.clj" (render "user.clj" data)]
                   ["dev/src/dev.clj" (render "dev.clj" data)]
                   ["README.md" (render "README.md" data)]
