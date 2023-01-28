@@ -13,7 +13,7 @@
     (tmpl/->files data
                   "resources"
                   "spec"
-                  ["spec/{{sanitized}}/core.clj" (render "core_spec.clj")]
+                  ["spec/{{sanitized}}/core.clj" (render "core_spec.clj" data)]
                   [".dir-locals.el" (render "dir-locals.el" data)]
                   ["dev/src/user.clj" (render "user.clj" data)]
                   ["dev/src/dev.clj" (render "dev.clj" data)]
