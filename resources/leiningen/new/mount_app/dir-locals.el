@@ -1,2 +1,2 @@
-((nil . ((cider-ns-refresh-before-fn . "mount.core/stop")
-         (cider-ns-refresh-after-fn  . "mount.core/start"))))
+((nil . ((cider-ns-refresh-before-fn . "dev/stop")
+         (cider-ns-refresh-after-fn  . "dev/start"))))
