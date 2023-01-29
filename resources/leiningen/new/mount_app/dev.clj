@@ -8,9 +8,10 @@
 
 (clojure.tools.namespace.repl/set-refresh-dirs "dev/src" "src" "test" "spec")
 
-(defn start []
+(defn go []
   (stest/instrument)
-  (mount/start))
+  (mount/start)
+  :ready)
 
 (defn stop []
   (stest/unstrument)
@@ -18,7 +19,4 @@
 
 (defn reset []
   (stop)
-  (refresh :after 'mount.core/start)
-  (stest/instrument))
-
-(stest/instrument)
+  (refresh :after 'dev/go))
