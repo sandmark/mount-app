@@ -1,4 +1,5 @@
 {:linters      {:unused-namespace {:exclude [user]}}
+ :lint-as      {mount.core/defstate clojure.core/def}
  :config-in-ns {dev
                 {:linters {:refer-all           {:exclude [clojure.repl]}
                            :unused-namespace    {:exclude [clojure.java.io
