@@ -1,0 +1,6 @@
+{:linters      {:unused-namespace {:exclude [user]}}
+ :config-in-ns {dev
+                {:linters {:refer-all           {:exclude [clojure.repl]}
+                           :unused-namespace    {:exclude [clojure.java.io
+                                                           clojure.spec.alpha]}
+                           :unused-referred-var {:exclude {mount.core [start]}}}}}}

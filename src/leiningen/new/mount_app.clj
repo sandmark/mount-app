@@ -12,6 +12,7 @@
     (main/info (str "Creating new reloadable project using mount called \"" name "\" ..."))
     (tmpl/->files data
                   "resources"
+                  [".clj-kondo/config.edn" (render "clj-kondo.edn" data)]
                   ["spec/{{sanitized}}/core_spec.clj" (render "core_spec.clj" data)]
                   [".dir-locals.el" (render "dir-locals.el" data)]
                   [".joker" (render "joker" data)]
