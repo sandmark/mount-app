@@ -1,8 +1,8 @@
 (ns {{name}}.core
-    (:require [mount.core :as m])
+    (:require [mount.core :as mount :refer [defstate]])
     (:gen-class))
 
-(m/defstate env
+(defstate env
   :start {:options {}})
 
 (defn -main
