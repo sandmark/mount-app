@@ -15,7 +15,7 @@
              :profiles/test {}
              :project/dev   {:source-paths   ["dev/src" "spec"]
                              :resource-paths ["dev/resources"]
-                             :dependencies   [[org.clojure/tools.namespace "1.1.0"]
+                             :dependencies   [[org.clojure/tools.namespace "1.3.0"]
                                               [orchestra "2021.01.01-1"]]}
              :project/test  {:source-paths ["spec"]}
              :repl          {:repl-options {:init-ns user}}})
